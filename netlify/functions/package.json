@@ -1,0 +1,12 @@
+{
+  "name": "solana-token-risk-scanner",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build",  // 빌드 명령어
+    "start": "npm run start"   // 서버 시작 명령어 (필요시 추가)
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",  // API 요청을 위한 패키지
+    "netlify-cli": "^3.0.0"  // Netlify 관련 패키지
+  }
+}
