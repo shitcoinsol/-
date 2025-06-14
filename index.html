@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snipe Risk Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">Enter Solana Token Address</div>
+        <div class="card-body">
+            <input type="text" id="tokenAddress" placeholder="Enter Token Address">
+            <button class="button" onclick="scanToken()">Scan Now</button>
+        </div>
+    </div>
+
+    <div id="results"></div>
+
+    <!-- Buy/Sell Volume -->
+    <div id="buy-sell-volume" class="card" style="display:none;">
+        <div class="card-header">Buy & Sell Volume</div>
+        <div class="card-body">
+            <table id="buy-sell-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Buy Volume</th>
+                        <th>Sell Volume</th>
+                        <th>Ratio</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- New Holders -->
+    <div id="new-holders" class="card" style="display:none;">
+        <div class="card-header">New Holders</div>
+        <div class="card-body" id="holders-list"></div>
+    </div>
+
+    <!-- Developer Wallet History -->
+    <div id="dev-wallet-history" class="card" style="display:none;">
+        <div class="card-header">Developer Wallet History</div>
+        <div class="card-body" id="wallet-history"></div>
+    </div>
+
+    <!-- Risk Assessment -->
+    <div id="risk-assessment" class="card" style="display:none;">
+        <div class="card-header">Risk Assessment</div>
+        <div class="card-body" id="risk-result"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
