@@ -1,6 +1,4 @@
-
 [build]
-  functions = "netlify/functions"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  command = "npm run build"  # 빌드 명령어
+  functions = "netlify/functions"  # Netlify Functions 폴더 위치
+  publish = "public"  # 정적 파일을 저장할 위치 (HTML, CSS, JS 등)
